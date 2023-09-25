@@ -1,18 +1,15 @@
 html{
   scroll-behavior: smooth;
 }
-:root {
-  scroll-padding-top: 60px;
-}
 /*螢幕大小顯示*/
 @media (min-width:440px) {
 	.Main_options_row{
-		padding: 20px 52px 10px 52px;	
+		padding: 10px 52px 3px 52px;	
 	}
 }
 @media (max-width:440px) {
 	.Main_options_row{
-		padding: 20px 12px 10px 12px;	
+		padding: 3px 12px 0px 12px;	
 	}
 } 
 /*----------基礎設定--------*/
@@ -37,27 +34,28 @@ h1 {
   line-height: 40px;
 }
 h2 {
-  font-size: 25px;
-  line-height: 40px;
-	text-align: center;
-}
-h3{
-  font-size: 120%;
-	text-align: center;
-	line-height: 50px;
-}
-h4{
-  font-size: 20px;
+	font-size: 20px;
   line-height: 20px;
 	font-weight: 500px;
 	color: #583C21;
 }
+h3{
+  font-size: 120%;
+	text-align: center;
+	line-height: 35px;
+}
+h4{
+  font-size: 25px;
+  line-height: 40px;
+	text-align: center;
+}
 h5{
   font-size: 113%;
-  line-height: 45px;
+  line-height: 25px;
 	font-weight: 500px;
 	color: #921414;
 	text-align: center;
+	vertical-align: middle;
 }
 h6{
   font-size: 120%;
@@ -68,88 +66,74 @@ h6{
 
 p{
 	font-size: 15px;
-  line-height: 24px;
+  line-height: 27px;
 }
 .text{
 	line-height: 24px;
 	font-size: 14px;
 }
-nav a:active{
-	border-bottom: solid 3px #921414;
+img{
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
 }
-/*置頂----------------------------------------------------*/
-/* .top-Anchor{
-  position: fixed;
-  bottom: 20px;
-  right: 24px;
-  z-index: 100;
-  color: #e7e7e6;
-  padding: 0;
-  font-size: 3.5em;
-}
-.top-Anchor a:link{
-  color: #e7e7e6;
-} */
 
 /* -------------------about_me----------------- */
 .about_me{
-	border: solid;
-	background: #FFE8A4;
+	background-color: #FFFCF5;
+	padding: 10px;
 }
-.about_contact{
-	margin: 0px;
-	padding: auto;
-	width:80%;
+.about_contact_lt{
+	width: 90%;
+	margin: auto;
+	padding-top: 30px;
+	max-width: 350px;
 }
+.about_contact_rt{
+	width: 90%;
+	margin: auto;
+}
+.about_img{
+	border-radius: 120.5px;
+}
+/* -----------------about_me  end----------------- */
 .ee{
-	height: 1000px;
+	height: 400px;
 }
-/*-------------------- details---------------- */
-.details{
-	padding: 0px;
-	background: #F8F7EF;
-	width: 100%;
-}
-.details_container{
-	padding: 0px;
-	margin:0px auto 0px auto;
-	width: 100%;
-}
-.details_title{
-	padding: 0px;
-	margin:0px auto 0px auto;
-	width: 100%;
-}
+/* .my_life{
+	background-color: #FFEFC6
+} */
 .Main_options_row{
 	position: sticky;
-	top:0px;	
+	top: 0px;
 	z-index: 2;
-	background: #E0E0E0;
+	background-color: #FFEFC6
 }
 .Main_options{
 	padding: 7px;
 }
-.Main_options.active {
+.Secondary_options.active{
 	text-decoration: none;
 	color: #921414;
 	border-bottom: solid 3px #921414;
 }
+
 .Secondary{
-	position: sticky;
-	top:80px;
-	z-index: 2;
 	display: none;
 }
 .Secondary_container{
+	position: sticky;
+	top:55px;
+	z-index: 2;
 	overflow-x: auto;
-	margin:0px auto 0px auto;
 	display: flex;
-	justify-content: space-evenly;
 	background-color: #FFF;
 	border-bottom:solid 1px #3A3845 ;
 }
 .Secondary_options{
+	width: 100%;
 	white-space: nowrap;
+	margin: 12px 10px 2px 10px ;
 }
 .Secondary_options.active{
 	text-decoration: none;
@@ -157,14 +141,30 @@ nav a:active{
 	border-bottom: solid 3px #921414;
 }
 .theme{
-  padding-top: 90px;
-	max-width: 950px;
-	margin:-90px auto auto auto;
-}
-.Secondary_content{
 	position: relative;
-	background-color: #FFFDF7;
+	padding: 15px;
+	margin-top:-130px ;
 }
+.theme_title{
+	font-size: 140%;
+	margin: 130px 0px 15px 0px;
+	padding: -130px 0px 0px 0px;
+}
+.summary_text{
+	vertical-align: middle;	
+}
+.summary_lt{
+	margin: auto;
+	width: 95%;
+	padding: 5px;
+}
+.summary_rt{
+	margin: auto;
+	padding: 5px;
+}
+/* .summary_img{
+
+} */
 /*----------------- 自傳 start--------------*/
 /* 地區 start*/
 .area{
@@ -184,22 +184,14 @@ nav a:active{
 	position: relative;
 	z-index: 1;
 	padding-top: 7px;
+	font-size: 95%;
+	line-height: 145%;
 }
 .area_line{
 	height: 4px;
   width: 25%;
-	max-width: 280px;
-	margin-left: 7%;
+	margin-left: 10%;
   background-color: #e66f6f;
 	margin-top: 33px;
 	position: absolute;
 }
-/* 地區 end*/
-/* 學習歷程 start*/
-
-/* 學習歷程 end*/
-/* 學習歷程 start*/
-
-/* 學習歷程 end*/
-
-/* https://www.tpisoftware.com/tpu/articleDetails/2905 */
