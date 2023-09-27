@@ -16,5 +16,9 @@ $(document).ready(function(){
     }
     Secondary[num].style.display = "block"; 
   }
-
+$(function(){
+  $(".top-Anchor").click(function(){
+    $("html,body").animate({scrollTop:0},10);
+  });
+})
 });
