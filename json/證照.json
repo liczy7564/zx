@@ -1,0 +1,59 @@
+[
+    {
+        "name":"Azure Data Fundamentals",
+        "wh":"Microsoft",
+        "date":" 1110507 ",
+        "Certifications":"./imgs/證照/DP.png",
+        "SCert_img":""
+    },
+    {
+        "name":"Azure AI Fundamentals",
+        "wh":"Microsoft",
+        "date":"1110423 ",
+        "Certifications":"./imgs/證照/AI.png",
+        "SCert_img":""
+    },
+    {
+        "name":"Azure Fundamentals",
+        "wh":"Microsoft",
+        "date":"1110519 ",
+        "Certifications":"./imgs/證照/AZ.png",
+        "SCert_img":""
+    },
+    {
+        "name":"Spreadsheets Excel 2016",
+        "wh":"學校競賽",
+        "date":"1091219",
+        "Certifications":"",
+        "SCert_img":"./imgs/證照/EXCEL.png"
+    },
+    {
+        "name":"Computing 1.0 Python",
+        "wh":"ICDL",
+        "date":"1110529",
+        "Certifications":"",
+        "SCert_img":"./imgs/證照/python.png"
+    },
+    {
+        "name":"PowerPoint 2016",
+        "wh":"ICDL",
+        "date":"1120520",
+        "Certifications":"",
+        "SCert_img":"./imgs/證照/PPT.png"
+    },
+    {
+        "name":"IT Security ",
+        "wh":"ICDL",
+        "date":"1120521",
+        "Certifications":"",
+        "SCert_img":"./imgs/證照/IT.png"
+    },
+    {
+        "name":"Google Analytics(分析)",
+        "wh":"Google",
+        "date":"1120910 ",
+        "Certifications":"./imgs/證照/GA.png",
+        "SCert_img":""
+    }
+]
+
