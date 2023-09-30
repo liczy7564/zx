@@ -90,6 +90,24 @@ $(document).ready(function(){
       }
     }
   });
+  // $('.slideshow').each(function () {
+
+  //   let slideImgs = $(this).find('img'),
+  //           slideImgsCount = slideImgs.length,
+  //           currentIndex = 0;
+  
+  //   slideImgs.eq(currentIndex).fadeIn();
+  
+  //   setInterval(showNextSlide, 5000);
+  
+  //   function showNextSlide() {
+  //     let nextIndex = (currentIndex + 1) % slideImgsCount;
+  //     slideImgs.eq(currentIndex).Fadeout();
+  //     slideImgs.eq(nextIndex).fadeIn();
+  //     currentIndex = nextIndex;
+  //   }
+  // });
+
 //主控制開啟副控制
 // background-color: #000;
 // border-radius: 40px;
