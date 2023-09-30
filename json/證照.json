@@ -39,20 +39,20 @@
         "wh":"ICDL",
         "date":"1120520",
         "Certifications":"",
-        "SCert_img":"./imgs/證照/PPT.png"
+        "SCert_img":"imgs/證照/PPT.png"
     },
     {
         "name":"IT Security ",
         "wh":"ICDL",
         "date":"1120521",
         "Certifications":"",
-        "SCert_img":"./imgs/證照/IT.png"
+        "SCert_img":"imgs/證照/IT.png"
     },
     {
         "name":"Google Analytics(分析)",
         "wh":"Google",
         "date":"1120910 ",
-        "Certifications":"./imgs/證照/GA.png",
+        "Certifications":"imgs/證照/GA.png",
         "SCert_img":""
     }
 ]

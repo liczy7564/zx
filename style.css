@@ -120,13 +120,13 @@ img{
 	  border-radius: 220.5px;
 	  min-height: 200px;  
 	  min-width: 200px;  
-	  margin: auto;
 	  height: 20vw;
 	  width: 20vw;
 	background-size: 100%;
-	background-image: url(./imgs/火扇.jpg);
 	background-repeat: no-repeat;
   }
+
+
   /* -----------------about_me  end----------------- */
   /* .my_life{
 	  background-color: #FFEFC6
@@ -425,6 +425,10 @@ img{
 	.sdis{
 		display: none;
 	}
+	/*小置中*/
+	.scent{
+		display: block;
+	}
 	.grades_img_2{
 		height: 80vw;
 	}	  
@@ -544,7 +548,6 @@ img{
 }
 .Activity_information{
 	font-size: 17px;
-	text-align: center;
 	white-space:nowrap;
 }
 .class_information{
@@ -671,6 +674,11 @@ img{
 	padding:0px auto 8px auto;
 }
 .Societie_text{
+	width: 85%;
+	text-align:center;
+	margin: auto;
+}
+.next{
 	width: 85%;
 	text-align:center;
 	margin: auto;

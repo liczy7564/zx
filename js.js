@@ -9,13 +9,13 @@ $(document).ready(function(){
     url:"json/自傳.json",
     success:function(result){
         history_text_0.innerHTML+=result[0]['內容'];
-        history_img_0.innerHTML+="<img class='about_img' src="+
+        history_img_0.innerHTML+="<img class='about_img scent' src="+
         result[0]['圖片']+">";
         history_text_1.innerHTML+=result[1]['內容'];
-        history_img_1.innerHTML+="<img class='about_img' src="+
+        history_img_1.innerHTML+="<img class='about_img scent' src="+
         result[1]['圖片']+">";
         history_text_2.innerHTML+=result[2]['內容'];
-        history_img_2.innerHTML+="<img class='about_img' src="+
+        history_img_2.innerHTML+="<img class='about_img scent' src="+
         result[2]['圖片']+">";
     }  
   });
