@@ -90,61 +90,31 @@ $(document).ready(function(){
       }
     }
   });
-  // $('.slideshow').each(function () {
 
-  //   let slideImgs = $(this).find('img'),
-  //           slideImgsCount = slideImgs.length,
-  //           currentIndex = 0;
-  
-  //   slideImgs.eq(currentIndex).fadeIn();
-  
-  //   setInterval(showNextSlide, 5000);
-  
-  //   function showNextSlide() {
-  //     let nextIndex = (currentIndex + 1) % slideImgsCount;
-  //     slideImgs.eq(currentIndex).Fadeout();
-  //     slideImgs.eq(nextIndex).fadeIn();
-  //     currentIndex = nextIndex;
-  //   }
-  // });
-
-
+  // about_特質
   let The_about=document.querySelector(".The_about");
   $.ajax({
     url:"json/特質.json",
     success:function(result){
       for(let i=0;i<result.length;i++){
-        The_about.innerHTML+="<div class='The_Q'>"+
-      result[i]['Q']+"</div><div class='The_A'>"+
+        The_about.innerHTML+="<div class='The_Q' value='"+i+"'>"+
+      result[i]['Q']+"</div><div class='The_A' >"+
       result[i]['A']+"</div>";
       }
+      QArecall();
     }
   });
-  // let The_Q= document.getElementsByClassName("The_q"); 
-  // let The_A= document.getElementsByClassName("The_A"); 
-	// $(".The_Q").on("click",function(){
-  //   let num = $(this).attr("value");
-  //   The_Q(num);
-  // });
-
-
-    // let i;
-    // for (i = 0; i < Secondary.length; i++) {
-    //   The_A[i].style.display = "none";
-    //   The_Q[i].style.color="#B0B0B0"; 
-    // }
-    // The_A[num].style.display = "block";
-    // The_Q[num].style.color="#474032";
-    // $(".The_Q").click(function(){
-    //   $(".The_A").slideToggle();
-    // }); 
-
-    // function The_Q(num) { 
-    //   The_A[num].slideToggle();
-    // }
-
-
-
+  function QArecall(){
+    $(".The_Q").on("click",function(){
+      let num = $(this).attr("value");
+      The_Q(num);
+      console.log(num);
+    });
+  }
+  function The_Q(num){
+    let The_A = document.getElementsByClassName("The_A");
+    $(The_A[num]).slideToggle(200);   
+  }
 
 //主控制開啟副控制
 $(".illustrate").click(function(){
