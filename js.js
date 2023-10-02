@@ -90,6 +90,25 @@ $(document).ready(function(){
       }
     }
   });
+  // $('.slideshow').each(function () {
+
+  //   let slideImgs = $(this).find('img'),
+  //           slideImgsCount = slideImgs.length,
+  //           currentIndex = 0;
+  
+  //   slideImgs.eq(currentIndex).fadeIn();
+  
+  //   setInterval(showNextSlide, 5000);
+  
+  //   function showNextSlide() {
+  //     let nextIndex = (currentIndex + 1) % slideImgsCount;
+  //     slideImgs.eq(currentIndex).Fadeout();
+  //     slideImgs.eq(nextIndex).fadeIn();
+  //     currentIndex = nextIndex;
+  //   }
+  // });
+
+
   let The_about=document.querySelector(".The_about");
   $.ajax({
     url:"json/特質.json",
@@ -102,11 +121,11 @@ $(document).ready(function(){
     }
   });
   // let The_Q= document.getElementsByClassName("The_q"); 
-  let The_A= document.getElementsByClassName("The_A"); 
-	$(".The_Q").on("click",function(){
-    let num = $(this).attr("value");
-    The_Q(num);
-  });
+  // let The_A= document.getElementsByClassName("The_A"); 
+	// $(".The_Q").on("click",function(){
+  //   let num = $(this).attr("value");
+  //   The_Q(num);
+  // });
 
 
     // let i;
@@ -120,12 +139,14 @@ $(document).ready(function(){
     //   $(".The_A").slideToggle();
     // }); 
 
-    function The_Q(num) { 
-      The_A[num].slideToggle();
-    }
+    // function The_Q(num) { 
+    //   The_A[num].slideToggle();
+    // }
 
 
-主控制開啟副控制
+
+
+//主控制開啟副控制
 $(".illustrate").click(function(){
   $(".The_illustrate").slideToggle();
 }); 
@@ -147,7 +168,7 @@ let Main_option= document.getElementsByClassName("Main_options");
     Secondary[num].style.display = "block";
     Main_option[num].style.color="#474032";
   }
-
+  
   // 置頂
 $(function(){
   $(".top-Anchor").click(function(){
