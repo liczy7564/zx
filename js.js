@@ -108,12 +108,20 @@ $(document).ready(function(){
     $(".The_Q").on("click",function(){
       let num = $(this).attr("value");
       The_Q(num);
-      console.log(num);
     });
   }
   function The_Q(num){
     let The_A = document.getElementsByClassName("The_A");
     $(The_A[num]).slideToggle(200);   
+  }
+  
+  $(".time").on("click",function(){
+    let num = $(this).attr("value");
+    time(num);
+  });
+  function time(num){
+    let The_time = document.getElementsByClassName("The_time");
+    $(The_time[num]).slideToggle(200);   
   }
 
 //主控制開啟副控制
