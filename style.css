@@ -929,7 +929,7 @@ img{
     box-shadow: 0 0 6px #a0a0a0;
 }
 .Tline ul {
-	padding: 0em 0 1em 2em;
+	padding: 0 0 2em 2em;
 	margin: 0;
 	list-style: none;
 	position: relative;
@@ -937,11 +937,11 @@ img{
 .Tline ul::before {
 	content: ' ';
 	height: 100%;
-	width: 5px;
+	width: 3px;
 	background-color: #d9d9d9;
 	position: absolute;
 	top: 0;
-	left: 2.4em;
+	left: 2.5em;
 	z-index: -1;
 }
 .Tliney li div {
@@ -950,8 +950,8 @@ img{
 	vertical-align: top;
 }
 .Tline .bullet {
-	width: 1rem;
-	height: 1rem;
+	width: 20px;
+	height: 20px;
 	box-sizing: border-box;
 	border-radius: 50%;
 	background: #fff;
@@ -960,21 +960,13 @@ img{
 	margin-top: 7%;
 	float: left;
 }
-.Tline .bullet.pink {
-	background-color: hotpink;
-	border: 3px solid #F93B69;
-}
-.Tline .bullet.blue {
-	background-color: aquamarine;
-	border: 3px solid cadetblue;
-}
-.Tline .bullet.orange {
-	background-color: salmon;
-	border: 3px solid #EB8B6E;
+.Tline .bullet.color {
+	background-color: #fff;
+	border: 3px solid #FFE8A4;
 }
 .Tline .title {
 	font-size: 20px;
-	padding-top: 4vw;
+	padding-top: 7%;
 }
 .time_content {
 	width: 50vw;
