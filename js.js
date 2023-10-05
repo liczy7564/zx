@@ -1,24 +1,15 @@
 $(document).ready(function(){
-  let history_text_0=document.querySelector(".history_text_0");
-  let history_img_0=document.querySelector(".history_img_0");
-  let history_text_1=document.querySelector(".history_text_1");
-  let history_img_1=document.querySelector(".history_img_1");
-  let history_text_2=document.querySelector(".history_text_2");
-  let history_img_2=document.querySelector(".history_img_2");
+  let the_history=document.querySelector(".the_history");
   $.ajax({
     url:"json/自傳.json",
     success:function(result){
-        history_text_0.innerHTML+=result[0]['內容'];
-        history_img_0.innerHTML+="<img class='about_img scent' src="+
-        result[0]['圖片']+">";
-        history_text_1.innerHTML+=result[1]['內容'];
-        history_img_1.innerHTML+="<img class='about_img scent' src="+
-        result[1]['圖片']+">";
-        history_text_2.innerHTML+=result[2]['內容'];
-        history_img_2.innerHTML+="<img class='about_img scent' src="+
-        result[2]['圖片']+">";
+      for(let i=0;i<result.length;i++){
+        the_history.innerHTML+="<div class='The_history'></div><div class='theme' id='"+result[i]['id']+"'><h6 class='theme_title'>"+result[i]['主題']+"</h6><div class='row'><div class='col-md-6 col-xs-12'><div class='summary_lt'><div class='summary_text'>"+result[i]['內容']+"</div></div></div><div class='col-md-6 col-xs-12'><div class='summary_rt'><img class='about_img scent' src='"+result[i]['圖片']+"'</img></div></div></div></div></div>";
+      }
     }  
   });
+
+
 	let Secondary = document.getElementsByClassName("Secondary"); 
   Secondary[0].style.display = "block";
 	let Skill_1=document.querySelector(".Skill_1");
@@ -123,6 +114,19 @@ $(document).ready(function(){
     let The_time = document.getElementsByClassName("The_time");
     $(The_time[num]).slideToggle(200);   
   }
+  $(".open_all_1").on("click",function(){
+    for (i = 0; i < 3; i++) {
+      let The_time = document.getElementsByClassName("The_time");
+      $(The_time[i]).slideToggle(200);
+    }
+  });
+  $(".open_all_2").on("click",function(){
+    for (i = 3; i < 8; i++) {
+      let The_time = document.getElementsByClassName("The_time");
+      $(The_time[i]).slideToggle(200);
+    }
+  });
+
 
 //主控制開啟副控制
 $(".illustrate").click(function(){
